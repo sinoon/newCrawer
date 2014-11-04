@@ -1,0 +1,19 @@
+{
+  "name": "Data",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "linoon",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^0.9.0",
+    "cheerio": "^0.17.0",
+    "iconv-lite": "^0.4.4",
+    "node-xlsx": "^0.5.1",
+    "request": "^2.47.0",
+    "tracer": "^0.7.3"
+  }
+}
