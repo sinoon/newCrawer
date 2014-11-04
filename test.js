@@ -70,45 +70,45 @@ base.get(id,function(data){
 		for (var i = h.length - 1; i > 0; i--) {
 			if( Number(h[i]) > 0 )
 			{
-				hsum += Number(h[i]);
+				hsum++;
 			}
 			else
 			{
-				hsum_ += Number(h[i]);
+				hsum_++;
 			}
 
 			if( Number(d[i]) > 0 )
 			{
-				dsum += Number(d[i]);
+				dsum++;
 			}
 			else
 			{
-				dsum_ += Number(d[i]);
+				dsum_++;
 			}
 
 			if( Number(a[i]) > 0 )
 			{
-				asum += Number(a[i]);
+				asum++;
 			}
 			else
 			{
-				asum_ += Number(a[i]);
+				asum_++;
 			}
 		};
 
-		hsum_ = Number(hsum_).toFixed(3);
-		dsum_ = Number(dsum_).toFixed(3);
-		asum_ = Number(asum_).toFixed(3);		
-		hsum = Number(hsum).toFixed(3);
-		dsum = Number(dsum).toFixed(3);
-		asum = Number(asum).toFixed(3);
+		// hsum_ = Number(hsum_).toFixed(3);
+		// dsum_ = Number(dsum_).toFixed(3);
+		// asum_ = Number(asum_).toFixed(3);		
+		// hsum = Number(hsum).toFixed(3);
+		// dsum = Number(dsum).toFixed(3);
+		// asum = Number(asum).toFixed(3);
 		// console.log(hsum,hsum_,dsum,dsum_,asum,asum_)
 
 
-		var zhu = (Number(hsum) + Number(hsum_)).toFixed(3);
+		var zhu = hsum - hsum;
+		var ke = dsum - dsum;
+		var ya = asum - asum;
 		// console.log(zhu,hsum,hsum_)
-		var ke  = (Number(dsum) + Number(dsum_)).toFixed(3);
-		var ya  = (Number(asum) + Number(asum_)).toFixed(3);
 
 		var zhuhe = eval(h.join('+'));
 		var kehe  = eval(d.join('+'));
